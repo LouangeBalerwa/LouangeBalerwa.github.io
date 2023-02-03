@@ -1,0 +1,66 @@
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: 150px;
+  padding: 0 5px;
+  position: fixed;
+  background-color: #2f312f;
+  box-shadow: 0 0 20px #000;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+h1{
+	padding-left: 50px;
+	color: #fff;
+}
+#tete li{
+	display: inline-block;
+}
+#tete li a {
+	color: #fff;
+}
+#tete li a {
+  margin: 10px 10px;
+  position: relative;
+}
+#accueil{
+	margin-top:10em ;
+	
+	}
+#accueil h2{
+	text-align: center
+	display: flex;
+	padding-left: 50%;
+	color: red;
+}
+#accueil h3{
+	text-align: center
+	display: flex;
+	padding-left: 60%;
+}
+
+.accueil1{
+	padding-left: 50%;
+	color: blue;
+}
+
+.commataire{
+	border: 5pxs;
+}
+.bas {
+	justify-content: space-between;
+	display: inline-block;
+}
+.contacts {
+	  margin-top: 50px;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  flex-direction: column;
+}
