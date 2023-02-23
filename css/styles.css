@@ -1,66 +1,276 @@
-html {
-  scroll-behavior: smooth;
+@font-face {
+	font-family: ecriture;
+	src: url("GajrajOne-Regular.ttff");
+}
+@keyframes animation1{
+	from { color:rgb(255, 255, 255); }
+	33% { color:green; }
+	66% { color:yellow; }
+	to { color:rgb(0, 4, 255); }
+   
 }
 
-header {
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  height: 150px;
-  padding: 0 5px;
-  position: fixed;
-  background-color: #2f312f;
-  box-shadow: 0 0 20px #000;
-  top: 0;
-  right: 0;
-  left: 0;
+
+*{
+  scroll-behavior: smooth;
+  font-family: Poppins,sans-serif;
+  margin: 0%;
+  padding: 0%;
 }
-h1{
-	padding-left: 50px;
+
+.header {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	color: #fff;
+	height: 100px;
+	padding: 1px 1px;
+    background-color: #000;
+    box-shadow: 0 0 40px #fff;
+    font-size: 20px;
+	top: 0px;
+	right: 0;
+	left: 0px;
+	
 }
-#tete li{
+body{
+	background: rgb(76, 77, 75)
+}
+.header h1{
+	padding-left: 20px;
+	color: inherit;
+    font-size: 20px;
+	
+	
+}
+#commande li{
 	display: inline-block;
+	list-style: none;
+	
 }
-#tete li a {
-	color: #fff;
+
+#commande li a:hover{
+	letter-spacing: 1px;
+	text-decoration: underline;
+	color: rgb(255, 217, 0); 
+	transition: 2s;
+
 }
-#tete li a {
-  margin: 10px 10px;
-  position: relative;
+
+#commande li a {
+	position: relative;
+	color: inherit;
+ 	margin: 5px 5px;
+	text-decoration: none;
+	font-size: 20px;
 }
 #accueil{
-	margin-top:10em ;
 	
+	margin-top: 100px;
+	right: 0;
+	left: 0;
 	}
+#accueil img{
+	margin-left: 25%;
+	height: 300px;
+	justify-content: center;
+}
 #accueil h2{
-	text-align: center
-	display: flex;
-	padding-left: 50%;
-	color: red;
+	padding: 10px;
+	color: rgb(255, 217, 0);
+	text-align: center;
+	font-size: 50px;
+	
+	
 }
 #accueil h3{
-	text-align: center
-	display: flex;
-	padding-left: 60%;
+    padding: 20px;
+	color: rgb(255, 217, 0);
+	text-align: center;
+	font-size: 50px;
+	
+	
 }
-
+#accueil h3:hover{
+	color: #fff;
+	
+}
 .accueil1{
-	padding-left: 50%;
-	color: blue;
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+	animation: animation1 5s linear 1s;
+	animation-iteration-count: infinite;
+	
+}
+.accueil2{
+	margin: 50px;
+	padding: 20px;
+	text-align: center;
+	width: 100%;
+	font-size: 30px;
+	font-family: ecriture;
+	
 }
 
+.services {
+	padding: 40px 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	
+}
+.services1{
+    margin-left: 5%;
+	margin-right: 40%;
+	padding-right: 10px;
+}
+.services1 li{
+	color: #ffffff;
+}
+.services2{
+	margin-right:10%
+
+}
+.services2 li{
+	color: #ffffff;
+}
 .commataire{
 	border: 5pxs;
 }
 .bas {
-	justify-content: space-between;
-	display: inline-block;
+  padding: 10px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 0;
+}
+
+
+#menu {
+	padding: 40px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: rgba(255, 255, 255, 0.5);	
+  }
+  
+.activite {
+	
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 25px;
+  }
+  
+.menusprincipal {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	justify-content: space-around;
+  }
+.menusprincipal .detail {
+	display: flex;
+	height: 250px;
+	width: 20%;
+	background-color: #fff;
+	padding: 30px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+	box-shadow: 6px 4px 4px ;
+	font-family: ecriture;
+  }
+  .menusprincipal .detail a{
+	color: blue
+  }
+  .menusprincipal .detail li{
+	font-family: ecriture;
+  }
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.05);
+	padding: 50px 10px;
+  }
+  
+  .pub {
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 20px;
+  }
+  
+  .messages {
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+	justify-content: space-around;
+  }
+  
+  .messages .mess {
+	display: flex;
+	height: 250px;
+	width: 20%;
+	background-color: rgb(238, 248, 210);
+	padding: 30px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+	box-shadow: 6px 4px 4px ;
+  }
+  
+  .messages .mess img {
+	width: 130px;
+	height: 120px;
+	margin-bottom: 15px;
+  }
+  
+  .messages .mess h2 {
+	text-align: center;
+	font-size: 20px;
+	text-transform: uppercase;
+  }
+  
+  .messages .mess a {
+	margin-top: 10px;
+	font-size: 20px;
+	text-decoration: 0;
+	background-color: rgb(255, 217, 0);
+	padding: 5px 50px;
+	columns: #fff;
+	color: black;
+  }
+  .realisation{	
+	text-align: center;
+	padding: 10px;
+	color: #fff;
+}
+.realisation2{	
+	margin: 70px;
+	padding: 30px;
+	text-align: center;
+	padding: 10px;
+	color: #fff;
+	
 }
 .contacts {
+	justify-content: center;
+	flex-direction: column;
 	  margin-top: 50px;
 	  display: flex;
 	  align-items: center;
-	  justify-content: center;
-	  flex-direction: column;
+	  color: rgb(255, 217, 0);
+	  
+}
+.retour{
+	color: rgb(255, 217, 0);
 }
