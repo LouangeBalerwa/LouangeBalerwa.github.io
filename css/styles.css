@@ -1,13 +1,12 @@
 @font-face {
 	font-family: ecriture;
-	src: url("GajrajOne-Regular.ttff");
+	src: url(Mynerve-Regular.ttf);
 }
 @keyframes animation1{
 	from { color:rgb(255, 255, 255); }
 	33% { color:green; }
 	66% { color:yellow; }
 	to { color:rgb(0, 4, 255); }
-   
 }
 
 
@@ -24,18 +23,23 @@
 	justify-content: space-between;
 	align-items: center;
 	color: #fff;
-	height: 100px;
 	padding: 1px 1px;
     background-color: #000;
     box-shadow: 0 0 40px #fff;
     font-size: 20px;
 	top: 0px;
 	right: 0;
-	left: 0px;
-	
+	left: 0;	
+
+}
+@media screen and (max-width : 755) {
+	#commande{
+		position: static;
+	}
 }
 body{
-	background: rgb(76, 77, 75)
+	
+	 background: rgb(76, 77, 75);  
 }
 .header h1{
 	padding-left: 20px;
@@ -66,17 +70,18 @@ body{
 	font-size: 20px;
 }
 #accueil{
-	
-	margin-top: 100px;
 	right: 0;
 	left: 0;
 	}
-#accueil img{
-	margin-left: 25%;
-	height: 300px;
-	justify-content: center;
+#accueil {
+	margin-top:50px ;
+	background: url("../images/tel l1.jpg") no-repeat;
+	background-size: 100%;
+	font-family: ecriture;
+	
 }
 #accueil h2{
+	
 	padding: 10px;
 	color: rgb(255, 217, 0);
 	text-align: center;
@@ -92,13 +97,9 @@ body{
 	
 	
 }
-#accueil h3:hover{
-	color: #fff;
-	
-}
+
 .accueil1{
 	text-align: center;
-	background-color: #000;
 	color: #fff;
 	animation: animation1 5s linear 1s;
 	animation-iteration-count: infinite;
@@ -248,7 +249,7 @@ body{
 	padding: 5px 50px;
 	columns: #fff;
 	color: black;
-  }
+  }	
   .realisation{	
 	text-align: center;
 	padding: 10px;
@@ -262,15 +263,27 @@ body{
 	color: #fff;
 	
 }
-.contacts {
+.contacts form {
+	height: 100vh;
+	background-color: rgb(20, 1, 1);
 	justify-content: center;
 	flex-direction: column;
-	  margin-top: 50px;
-	  display: flex;
-	  align-items: center;
-	  color: rgb(255, 217, 0);
-	  
-}
-.retour{
+	display: flex;
+	align-items: center;
 	color: rgb(255, 217, 0);
+	flex-direction: column;
+	
+	
+}
+.contacts div{
+	margin: 5px;
+	padding: 10px;
+	font-size: 20px;
+	
+}
+
+.retour{
+	position: relative;
+	color: rgb(255, 217, 0);
+	align-items: center;
 }

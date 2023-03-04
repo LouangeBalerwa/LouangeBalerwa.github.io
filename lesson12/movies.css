@@ -1,0 +1,109 @@
+@font-face {
+	font-family: Arvo;
+	src: url(Arvo-Regular.ttf);
+}
+:root {
+	--color-main: #D00;
+	--color-main-dark: #B00;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Arvo;
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+}
+
+/***** HEADER SEARCH FORM *****/
+
+header {
+	width: 100%;
+	margin: 0;
+	padding: 20px;
+	background-color: var(--color-main);
+	color: white;
+}
+
+#search-form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#search-form label {
+	font-size: 32px;
+	margin-right: 20px;
+	flex: 0 0 8em;
+}
+#search-form .search-div {
+	display: flex;
+	flex-direction: row;
+	flex: 1 1 300px;
+	min-width: 250px;
+	max-width: 600px;
+}
+.search-div input {
+	font-size: 24px;
+	flex: 1 1 200px;
+	width: calc(100% - 100px);
+	display: block;
+}
+.search-div button {
+	border: none;
+	flex: 0 0 100px;
+	background-color: white;
+	color: var(--color-main);
+	font-size: 24px;
+}
+.search-div button:hover {
+	background-color: var(--color-main-dark);
+	color: white;
+}
+
+/****** MAIN CONTENT + MOVIE CARDS ******/
+
+section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.movie-card {
+	margin: 20px;
+	flex-basis: 250px;
+
+	border: 1px solid #BBB;
+	padding: 0;
+	box-shadow: 3px 3px 5px #888;
+	border-radius: 10px;
+	
+}
+.movie-card .poster {
+	margin: 0;
+	width: 250px;
+	height: 370px;
+	overflow: hidden;
+}
+.movie-card .poster img {
+	width: 100%;
+}
+
+.movie-card h2 {
+	text-align: center;
+	padding: 10px;
+}
+.movie-card h3 {
+	margin: 0;
+	padding: 15px;
+	background-color: var(--color-main);
+	color: white;
+	text-align: center;
+	font-size: 2em;
+}
+
+
+
+

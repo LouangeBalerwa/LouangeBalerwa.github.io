@@ -3,25 +3,55 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<title>Contactez-nous</title>
+	<script src="app.js"></script>
 
 </head>
-	<body>
+	<body >
 	<section class="contacts">
-	      <h2 class="titre">Faire votre Enregistrement</h2>
-	        <label for="">Entrer votre nom</label>
-	        <input type="text">
-	        <label for="">Votre Email</label>
-	        <input type="text">
-	        <label for="">Votre numéro de téléphone</label>
-	        <input type="text">
-	        <label for="">Profession</label>
-	        <input type="text">
-	        <label for="">Lieu de Residence</label>
-	        <input type="text">
-
-    </section>
-	<a class="retour" href="index.html">Retour a la page</a>
+	    <h1 class="titre">Faire votre Enregistrement</h1>
+		<form >
+			<div>
+				<label for="inputNom">Entrer votre nom</label>
+				<input type="text" name="nom" id="inputNom">
+			</div>
+			<div>
+				<label for="inputemail">Votre Email</label>
+				<input type="email" name="email" id="inputemail" placeholder="nom@gmail.com"> 
+			</div>
+			<div>
+				<label for="inputpassword">Mot de passe</label>
+				<input type="password" name="passeword" id="inputpassword">
+			</div>
+			<DIv>
+				<label for="inputtelephone">Votre numéro de téléphone</label>
+				<input type="tel" name="telephone" id="inputtelephone" value="+">	
+			</div>
+			<div>
+				<label for="">Genre</label>
+			</div>
+			<div>
+				<input type="radio" name="genre" id="inputmasule" checked>
+				<label for="inputmasule">Masculin</label>
+				<input type="radio" name="genre" id="inputfemine" >
+				<label for="inputfemine">Feminin</label>
+			</div>     
+			<div>
+				<label for="inputpays">Lieu de Residence</label>
+				<input type="text" name="pays" id="inputpays">
+			</div>	
+			<div>
+				<label for="inputdate">Date d'inscription</label>
+				<input type="date" name="date" id="inputdate">
+			</div>
+				<input type="submit" value="Envoyer l'Enregistrement">
+				<input type="reset" value="Annuler">
+		</form>
+		
+		<div>
+			<a class="retour" href="index.html">Retour a la page precedente</a>
+		</div>
+	</section>
 	</body>
 </html>
